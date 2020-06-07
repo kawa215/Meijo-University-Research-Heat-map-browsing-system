@@ -22,8 +22,8 @@ export default {
   data: function() {
     return {
       icons: [
-        require("../../../dataset/cifar10-ep100-epi10-img5/img0048.png"),
-        require("../../../dataset/cifar10-ep100-epi10-img5/img1935.png")
+        require("../../dataset/cifar10-ep100-epi10-img5/img0048.png"),
+        require("../../dataset/cifar10-ep100-epi10-img5/img1935.png")
       ]
     };
   }

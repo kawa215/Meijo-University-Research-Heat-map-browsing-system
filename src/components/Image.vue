@@ -316,7 +316,7 @@ export default {
           case 1:
             this.classData[0]["input"].push({
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -325,7 +325,7 @@ export default {
           case 2:
             this.classData[0]["model"][0]["arch"] = {
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -334,7 +334,7 @@ export default {
           case 3:
             this.classData[0]["model"][0]["heatmap"].push({
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -343,7 +343,7 @@ export default {
           case 4:
             this.classData[0]["model"][0]["modelEpoch"].push({
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -353,7 +353,7 @@ export default {
             this.classData[0]["learning"][0]["history"] = {
               name: nameF[i],
               img:
-                "../../../dataset/cifar10-ep" +
+                "../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i]
@@ -362,7 +362,7 @@ export default {
           case 6:
             this.classData[0]["learning"][0]["loss"] = {
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -371,7 +371,7 @@ export default {
           case 7:
             this.classData[0]["learning"][0]["acc"] = {
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -381,7 +381,7 @@ export default {
             this.classData[0]["evaluation"] = {
               name: nameF[i],
               img:
-                "../../../dataset/cifar10-ep" +
+                "../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i]
@@ -390,7 +390,7 @@ export default {
           case 9:
             this.classData[0]["visualize"].push({
               name: nameF[i],
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 nameF[i])
@@ -411,7 +411,7 @@ export default {
         if (type[type.length - 1].toLowerCase() == "png") {
           this.heatData[0]["child"].push({
             name: nameF[i],
-            img: require("../../../dataset/" + r + nameF[i])
+            img: require("../../dataset/" + r + nameF[i])
           });
         }
 
@@ -586,7 +586,7 @@ export default {
         ) {
           this.numHeatData.push({
             name: this.heatData[0]["child"][i].name,
-            img: require("../../../dataset/" +
+            img: require("../../dataset/" +
               r +
               this.heatData[0]["child"][i].name)
           });
@@ -597,7 +597,7 @@ export default {
         if (this.classData[0]["input"][f].name.indexOf(imgNum) !== -1) {
           this.numHeatData.push({
             name: this.classData[0]["input"][f].name,
-            img: require("../../../dataset/" +
+            img: require("../../dataset/" +
               r +
               this.classData[0]["input"][f].name)
           });
@@ -649,7 +649,7 @@ export default {
 
       //最初の画像
       this.images[index]["first"] = {
-        img: require("../../../dataset/cifar10-ep" +
+        img: require("../../dataset/cifar10-ep" +
           this.val.ep +
           "-epi10-img5/" +
           this.methodList[0]),
@@ -697,7 +697,7 @@ export default {
             }
 
             this.images[index]["heatmap"].push({
-              img: require("../../../dataset/cifar10-ep" +
+              img: require("../../dataset/cifar10-ep" +
                 this.val.ep +
                 "-epi10-img5/" +
                 this.classData[0]["model"][0]["modelEpoch"][r].name),
@@ -728,7 +728,7 @@ export default {
             }
           }
           this.images[index]["heatmap"].push({
-            img: require("../../../dataset/cifar10-ep" +
+            img: require("../../dataset/cifar10-ep" +
               this.val.ep +
               "-epi10-img5/" +
               this.classData[0]["visualize"][e].name),
