@@ -15,7 +15,7 @@ npm install
 npm run serve
 ```
 
-## 起動のための手順3: http://localhost:8080 へWeb ブラウザでアクセス
+## 起動のための手順3: http://localhost: ~ へWeb ブラウザでアクセス
 
 # デモを動かすための操作手順
 
