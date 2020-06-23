@@ -205,7 +205,7 @@ export default {
         "Gradient",
         "SmoothGrad",
         "IntegratedGradients",
-        "Input*Gradient",
+        "Input_Gradient",
         "LRP-Epsilon",
         "DeepTaylor",
         "LRP-PresetA"
@@ -508,7 +508,7 @@ export default {
               name: "6"
             };
             break;
-          case numHeatData[i].name.indexOf("Input*Gradient") !== -1:
+          case numHeatData[i].name.indexOf("Input_Gradient") !== -1:
             this.NewnumHeatData[7] = {
               img: numHeatData[i].img,
               name: "7"
@@ -686,7 +686,7 @@ export default {
               //この二つはパス
               if (
                 this.classData[0]["model"][0]["modelEpoch"][r].name.indexOf(
-                  "Input*Gradient"
+                  "Input_Gradient"
                 ) !== -1 ||
                 this.classData[0]["model"][0]["modelEpoch"][r].name.indexOf(
                   "IntegratedGradients"
@@ -718,7 +718,7 @@ export default {
             //この二つはパス
             if (
               this.classData[0]["visualize"][e].name.indexOf(
-                "Input*Gradient"
+                "Input_Gradient"
               ) !== -1 ||
               this.classData[0]["visualize"][e].name.indexOf(
                 "IntegratedGradients"
