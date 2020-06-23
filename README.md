@@ -2,12 +2,15 @@
 
 <img width="1680" alt="Screen Shot 2020-06-08 at 3 26 44" src="https://user-images.githubusercontent.com/44857986/83976883-e7794000-a937-11ea-8b8c-d080c7dd7d20.png">
 
-## 起動のための手順1 : npm installを実行する
+## 起動のための手順1 : Node.jsをインストールする。
+### [Node.jsのHP](https://nodejs.org/)のからダウンロードする。画面左の推奨版を推奨。
+
+## 起動のための手順2 : npm installを実行する
 ```
 npm install
 ```
 
-## 起動のための手順2 : npm run serve で開発用web サーバを起動する
+## 起動のための手順3 : npm run serve で開発用web サーバを起動する
 ```
 npm run serve
 ```
